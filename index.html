@@ -1,1 +1,150 @@
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>홍길동 | Portfolio</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 { font-size: 36px; }
+
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px #00000012;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <strong>MY PORTFOLIO</strong>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>안녕하세요, 홍길동입니다.</h1>
+    <p>개발과 데이터 분석으로 가치를 만듭니다.</p>
+    <a class="btn" href="#projects">
+      프로젝트 보기
+    </a>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      안녕하세요. 웹 개발과 데이터 분석에
+      관심이 있는 홍길동입니다.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+      <div class="card">
+        <h3>데이터 분석</h3>
+        <p>Python을 활용한 데이터 시각화</p>
+      </div>
+
+      <div class="card">
+        <h3>웹사이트 개발</h3>
+        <p>HTML, CSS 기반 반응형 웹사이트</p>
+      </div>
+
+      <div class="card">
+        <h3>연구 프로젝트</h3>
+        <p>연구 결과 및 프로젝트 보고서</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: example@email.com</p>
+    <p>
+      GitHub:
+      <a href="https://github.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        GitHub 방문
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Hong Gildong. All rights reserved.
+  </footer>
+</body>
+</html>
