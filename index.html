@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>류형욱| Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goraniak</title>
+  <meta name="description" content="Goraniak - 류형욱이 운영하는 웹 서비스">
 
   <style>
     * { box-sizing: border-box; }
@@ -42,7 +41,7 @@
       padding: 100px 20px;
     }
 
-    .hero h1 { font-size: 36px; }
+    .hero h1 { font-size: 36px; margin: 0 0 12px; }
 
     .btn {
       display: inline-block;
@@ -60,10 +59,9 @@
       padding: 60px 20px;
     }
 
-    .projects {
+    .cards {
       display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
 
@@ -74,77 +72,93 @@
       box-shadow: 0 4px 15px #00000012;
     }
 
+    .card h3 { margin-top: 0; }
+
+    section a { color: #2563eb; }
+
     footer {
       background: #0f172a;
       color: white;
       text-align: center;
       padding: 25px;
     }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <strong>MY PORTFOLIO</strong>
+    <strong>Goraniak</strong>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">소개</a>
+      <a href="#data">개인정보</a>
+      <a href="#contact">문의</a>
     </nav>
   </header>
 
   <div class="hero">
-    <h1>안녕하세요, 홍길동입니다.</h1>
-    <p>개발과 데이터 분석으로 가치를 만듭니다.</p>
-    <a class="btn" href="#projects">
-      프로젝트 보기
-    </a>
+    <h1>Goraniak</h1>
+    <!-- 앱이 하는 일을 한 줄로 바꿔 쓰세요 -->
+    <p>Google 계정으로 간편하게 로그인해 이용하는 웹 서비스입니다.</p>
+    <a class="btn" href="#about">서비스 소개 보기</a>
   </div>
 
   <section id="about">
-    <h2>About Me</h2>
+    <h2>서비스 소개</h2>
+    <!-- 앱의 기능을 2~3줄로 바꿔 쓰세요 -->
     <p>
-      안녕하세요. 웹 개발과 데이터 분석에
-      관심이 있는 홍길동입니다.
+      Goraniak은 류형욱이 개발·운영하는 웹 서비스입니다.
+      이용자는 별도 회원가입 없이 Google 계정으로 로그인하여 서비스를 이용할 수 있습니다.
     </p>
-  </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="projects">
+    <div class="cards">
       <div class="card">
-        <h3>데이터 분석</h3>
-        <p>Python을 활용한 데이터 시각화</p>
+        <h3>Google 로그인</h3>
+        <p>Google 계정으로 안전하게 로그인합니다. 비밀번호는 서비스에 전달되거나 저장되지 않습니다.</p>
       </div>
 
       <div class="card">
-        <h3>웹사이트 개발</h3>
-        <p>HTML, CSS 기반 반응형 웹사이트</p>
+        <h3>최소한의 정보</h3>
+        <p>로그인 확인에 필요한 이메일, 이름, 프로필 사진만 사용합니다.</p>
       </div>
 
       <div class="card">
-        <h3>연구 프로젝트</h3>
-        <p>연구 결과 및 프로젝트 보고서</p>
+        <h3>별도 저장 없음</h3>
+        <p>받은 정보는 별도의 서버나 데이터베이스에 저장하지 않습니다.</p>
       </div>
     </div>
   </section>
 
+  <section id="data">
+    <h2>개인정보 처리</h2>
+    <p>
+      Goraniak은 Google 로그인 시 이메일 주소, 이름, 프로필 사진을 받아 로그인 확인에만 사용합니다.
+      이 정보는 제3자에게 제공하지 않으며 광고 목적으로 사용하지 않습니다.
+    </p>
+    <p>
+      자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인해 주세요.
+    </p>
+  </section>
+
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: example@email.com</p>
+    <h2>문의</h2>
+    <p>운영자: 류형욱</p>
+    <p>Email: <a href="mailto:jua990121@gmail.com">jua990121@gmail.com</a></p>
     <p>
       GitHub:
-      <a href="https://github.com/"
-         target="_blank"
-         rel="noopener noreferrer">
-        GitHub 방문
-      </a>
+      <a href="https://github.com/goraniak" target="_blank" rel="noopener noreferrer">github.com/goraniak</a>
     </p>
   </section>
 
   <footer>
-    © 2026 Hong Gildong. All rights reserved.
+    <p>
+      <a href="privacy.html">개인정보처리방침</a>
+    </p>
+    © 2026 류형욱. All rights reserved.
   </footer>
 </body>
 </html>
